@@ -1,0 +1,14 @@
+<form [formGroup]="todoForm" (ngSubmit)="submit()">
+  <app-input
+    [value]="todo?.title"
+    [control]="title"
+    inputId="todo"
+    label="Add TODO"
+  ></app-input>
+  <div class="text-end d-block">
+    <button type="submit" class="btn btn-sm btn-success px-3 me-2">
+      {{ todo ? "Edit" : "Add" }}
+    </button>
+    <button type="reset" class="btn btn-sm btn-secondary px-3">cancel</button>
+  </div>
+</form>

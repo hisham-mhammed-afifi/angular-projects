@@ -1,0 +1,18 @@
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+  </li>
+  <li class="nav-item" *ngIf="logedIn">
+    <a class="nav-link" routerLink="todos" routerLinkActive="active"
+      >All TODOs</a
+    >
+  </li>
+  <li class="nav-item" *ngIf="!logedIn">
+    <a class="nav-link" routerLink="auth" routerLinkActive="active"
+      >signup / Login</a
+    >
+  </li>
+  <li class="nav-item" *ngIf="logedIn" (click)="logout()">
+    <a class="nav-link">logout</a>
+  </li>
+</ul>

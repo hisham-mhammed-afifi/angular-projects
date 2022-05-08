@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "hesham",
+      "email": "hesham@gmail.com",
+      "password": "123"
+    },
+    {
+      "name": "Hisham",
+      "email": "hish.abdelshafouk@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "Admin",
+      "email": "hesham@gmail.com",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "todos": [
+    {
+      "title": "walk the dog",
+      "completed": false,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "title": "feed the cat",
+      "completed": false,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "title": "another task please",
+      "completed": false,
+      "userId": 2,
+      "id": 3
+    }
+  ]
+}

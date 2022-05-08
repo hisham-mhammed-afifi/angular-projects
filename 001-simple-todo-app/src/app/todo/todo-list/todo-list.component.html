@@ -1,0 +1,6 @@
+<app-todo-card
+  *ngFor="let todo of todos"
+  [todo]="todo"
+  (onEdit)="editTodo($event)"
+  (onDelete)="deleteTodo($event)"
+></app-todo-card>

@@ -1,0 +1,24 @@
+<div class="row justify-content-center mt-3">
+  <div class="col-12 col-sm-6">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <app-input
+        [control]="email"
+        inputId="email"
+        label="Email"
+        type="email"
+      ></app-input>
+      <app-input
+        [control]="password"
+        inputId="password"
+        label="Password"
+        type="password"
+      ></app-input>
+      <button type="submit" class="btn btn-primary px-3 me-3">Login</button>
+      <a
+        [routerLink]="['/auth', 'signup']"
+        class="btn btn-outline-secondary px-3"
+        >Create new</a
+      >
+    </form>
+  </div>
+</div>
